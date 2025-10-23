@@ -294,6 +294,108 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+/* ===== NESTED EXPANDABLE DETAILS ===== */
+.step-detail-item {
+  list-style: none !important;
+}
+
+.step-detail-item:before {
+  content: '' !important;
+}
+
+.detail-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+  padding-left: var(--spacing-lg);
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.detail-summary:before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.detail-expand-btn {
+  flex-shrink: 0;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.detail-expand-btn:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--primary);
+}
+
+.detail-expand-btn:active {
+  transform: scale(0.95);
+}
+
+.detail-expanded {
+  margin-top: var(--spacing-xs);
+  margin-left: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.8);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-sm);
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-line {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: var(--spacing-xs) 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.detail-line:empty {
+  margin: var(--spacing-sm) 0;
+  height: 0.5rem;
+}
+
+.detail-line:first-child {
+  margin-top: 0;
+}
+
+.detail-line:last-child {
+  margin-bottom: 0;
+}
+
+/* Style for lines starting with special characters */
+.detail-line:has-text("•") {
+  padding-left: var(--spacing-md);
+}
+
 /* ===== STEP ACTIONS ===== */
 .step-actions {
   display: flex;
