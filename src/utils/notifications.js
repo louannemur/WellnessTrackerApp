@@ -1,82 +1,143 @@
 // Smart notification system
 
 export const notificationSchedule = [
+  // MORNING ROUTINE - Each individual step
   {
-    id: 'morning-stretches',
+    id: 'am-1',
     time: '07:00',
-    title: 'Morning! 🛏️',
-    body: 'Start with stretches in bed + lemon water',
-    logCheck: ['lemon-water', 'morning-stretches']
+    title: 'Good Morning! 🛏️',
+    body: 'In-Bed Activation: Gentle stretches before getting up',
+    logCheck: ['am-1', 'in-bed-activation']
   },
   {
-    id: 'morning-exercise',
+    id: 'am-2',
+    time: '07:03',
+    title: 'Energy Points ⚡',
+    body: 'Acupressure: Zu San Li + Bai Hui points',
+    logCheck: ['am-2', 'acupressure']
+  },
+  {
+    id: 'am-3',
+    time: '07:05',
+    title: 'Hydration Time 🍋',
+    body: 'Morning lemon water - sip slowly',
+    logCheck: ['am-3', 'lemon-water', 'hydration']
+  },
+  {
+    id: 'am-4',
+    time: '07:07',
+    title: 'Light Up! ☀️',
+    body: 'Open curtains, 5 deep breaths at window',
+    logCheck: ['am-4', 'light-activation']
+  },
+  {
+    id: 'am-5',
     time: '07:10',
     title: 'Movement Time! 🏊‍♀️',
-    body: 'Pool, gym, or gentle qi gong - you got this!',
-    logCheck: ['exercise', 'pool', 'gym', 'qi-gong']
+    body: 'Pool, gym, or qi gong - pick what feels good today',
+    logCheck: ['am-5', 'exercise', 'movement', 'pool', 'gym', 'qi-gong']
   },
   {
-    id: 'morning-skincare',
+    id: 'am-6',
     time: '07:30',
-    title: 'Skincare Time 🧴',
-    body: 'Take care of that beautiful skin',
-    logCheck: ['am-skincare', 'skincare']
+    title: 'Skincare Ritual 🧴',
+    body: 'Korean routine: Cleanse, tone, essence, moisturize, SPF',
+    logCheck: ['am-6', 'am-skincare', 'skincare']
   },
   {
-    id: 'tiny-breakfast',
-    time: '07:45',
-    title: 'Breakfast Time 🥚',
-    body: 'Eat anything tiny - even 3 almonds count!',
-    logCheck: ['breakfast', 'tiny-breakfast']
+    id: 'am-7',
+    time: '07:40',
+    title: 'Mini Breakfast 🥚',
+    body: 'Something tiny counts - even 5 almonds!',
+    logCheck: ['am-7', 'breakfast', 'mini-breakfast']
   },
+
+  // MEALS THROUGHOUT DAY
   {
     id: 'second-breakfast',
     time: '10:30',
     title: 'Second Breakfast 🥣',
-    body: 'Second breakfast time - you got this!',
+    body: 'Time for a more substantial meal',
     logCheck: ['second-breakfast']
   },
   {
     id: 'lunch-time',
     time: '12:30',
     title: 'Lunch Break 🍜',
-    body: 'Time for your biggest meal of the day',
+    body: 'Your biggest meal of the day',
     logCheck: ['lunch']
   },
   {
     id: 'afternoon-snack',
     time: '15:00',
-    title: 'Snack Break 🍎',
-    body: 'Snack break - check your energy',
+    title: 'Snack Time 🍎',
+    body: 'Energy boost - check how you\'re feeling',
     logCheck: ['snack', 'afternoon-snack']
   },
   {
     id: 'dinner-time',
     time: '18:30',
     title: 'Dinner Time 🍱',
-    body: 'Time for a balanced dinner',
+    body: 'Medium-sized balanced dinner',
     logCheck: ['dinner']
   },
+
+  // EVENING ROUTINE - Each individual step
   {
-    id: 'evening-tea',
+    id: 'pm-1',
     time: '20:00',
-    title: 'Tea Time! 🍵',
-    body: 'Spearmint, chrysanthemum, or holy basil?',
-    logCheck: ['spearmint-tea', 'evening-tea', 'tea']
+    title: 'Tea Ceremony 🍵',
+    body: 'Mindful tea prep - spearmint, chrysanthemum, or holy basil',
+    logCheck: ['pm-1', 'tea', 'evening-tea', 'tea-ceremony']
   },
   {
-    id: 'evening-skincare',
+    id: 'pm-2',
     time: '20:05',
-    title: 'PM Skincare 🌙',
-    body: 'Double cleanse + beauty routine',
-    logCheck: ['pm-skincare', 'evening-skincare']
+    title: 'Oil Cleanse 🧼',
+    body: 'Remove sunscreen and buildup - massage for 60 sec',
+    logCheck: ['pm-2', 'oil-cleanse']
   },
   {
-    id: 'bedtime-prep',
+    id: 'pm-3',
+    time: '20:07',
+    title: 'Second Cleanse 💧',
+    body: 'Water-based cleanser - rinse well',
+    logCheck: ['pm-3', 'water-cleanse']
+  },
+  {
+    id: 'pm-4',
+    time: '20:08',
+    title: 'Treatment Time 🌿',
+    body: 'BHA on Tue/Fri, toner on other days',
+    logCheck: ['pm-4', 'treatment', 'toner']
+  },
+  {
+    id: 'pm-5',
+    time: '20:10',
+    title: 'Essence & Moisturize 💧',
+    body: 'Snail mucin + moisturizer with upward strokes',
+    logCheck: ['pm-5', 'essence', 'moisturizer']
+  },
+  {
+    id: 'pm-6',
+    time: '20:12',
+    title: 'Gua Sha (Optional) 💆‍♀️',
+    body: 'Face massage to reduce puffiness',
+    logCheck: ['pm-6', 'gua-sha', 'face-massage']
+  },
+  {
+    id: 'pm-7',
     time: '20:15',
-    title: 'Sleep Prep 😴',
-    body: 'Supplements + legs up wall + wind down',
-    logCheck: ['sleep-prep', 'bedtime']
+    title: 'Supplements 💊',
+    body: 'Magnesium, probiotic, NAC',
+    logCheck: ['pm-7', 'supplements']
+  },
+  {
+    id: 'pm-8',
+    time: '20:16',
+    title: 'Legs Up the Wall 🧘‍♀️',
+    body: 'Final relaxation - 3 minutes to reduce swelling',
+    logCheck: ['pm-8', 'legs-up', 'sleep-prep']
   }
 ]
 
