@@ -2,20 +2,21 @@
   "name": "Wellness Tracker",
   "short_name": "Wellness",
   "description": "Your personal wellness companion for PCOS, Crohn's, and ADHD management",
-  "start_url": "/",
+  "start_url": "https://louannemur.github.io/WellnessTrackerApp/",
+  "scope": "/WellnessTrackerApp/",
   "display": "standalone",
   "background_color": "#667eea",
   "theme_color": "#667eea",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/WellnessTrackerApp/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/WellnessTrackerApp/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -27,22 +28,22 @@
       "name": "Quick Log",
       "short_name": "Log",
       "description": "Quick log your activities",
-      "url": "/?page=quicklog",
-      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+      "url": "/WellnessTrackerApp/?page=quicklog",
+      "icons": [{ "src": "/WellnessTrackerApp/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Routines",
       "short_name": "Routines",
       "description": "View your routines",
-      "url": "/?page=routines",
-      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+      "url": "/WellnessTrackerApp/?page=routines",
+      "icons": [{ "src": "/WellnessTrackerApp/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "SOS",
       "short_name": "SOS",
       "description": "Help for difficult days",
-      "url": "/?page=sos",
-      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+      "url": "/WellnessTrackerApp/?page=sos",
+      "icons": [{ "src": "/WellnessTrackerApp/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }
