@@ -64,23 +64,23 @@ export const notificationSchedule = [
   // EVENING ROUTINE - Time blocks from wellnessguide.md
   {
     id: 'tea-block',
-    time: '20:00',
+    time: '22:00',
     title: 'Tea Ceremony 🍵',
-    body: 'Mindful tea prep - spearmint, chrysanthemum, or holy basil (5 min)',
+    body: 'Mindful tea prep - spearmint, chrysanthemum, or holy basil',
     logCheck: ['pm-1', 'tea', 'evening-tea', 'tea-ceremony']
   },
   {
     id: 'pm-skincare-block',
-    time: '20:05',
+    time: '22:30',
     title: 'PM Skincare 🌙',
-    body: 'Full routine: Double cleanse, treatment, essence, moisturize (10 min)',
+    body: 'Full routine: Double cleanse, treatment, essence, moisturize',
     logCheck: ['pm-2', 'pm-3', 'pm-4', 'pm-5', 'pm-6', 'pm-skincare', 'evening-skincare']
   },
   {
     id: 'sleep-prep-block',
-    time: '20:15',
+    time: '23:00',
     title: 'Sleep Prep 😴',
-    body: 'Supplements + legs up the wall (5 min)',
+    body: 'Supplements + legs up the wall',
     logCheck: ['pm-7', 'pm-8', 'supplements', 'legs-up', 'sleep-prep']
   }
 ]

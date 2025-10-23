@@ -39,15 +39,15 @@ function TodayPage() {
     if (time < 12.5) return { task: 'Second breakfast', emoji: '🥣', time: '10:30 AM' }
     if (time < 15) return { task: 'Lunch time', emoji: '🍜', time: '12:30 PM' }
     if (time < 18.5) return { task: 'Afternoon snack', emoji: '🍎', time: '3:00 PM' }
-    if (time < 20) return { task: 'Dinner time', emoji: '🍱', time: '6:30 PM' }
+    if (time < 22) return { task: 'Dinner time', emoji: '🍱', time: '6:30 PM' }
 
-    // Evening routine time blocks (8:00-8:20)
-    if (time < 20.083) return { task: 'Tea ceremony', emoji: '🍵', time: '8:00-8:05 PM' }
-    if (time < 20.25) return { task: 'PM skincare', emoji: '🌙', time: '8:05-8:15 PM' }
-    if (time < 20.333) return { task: 'Sleep prep', emoji: '😴', time: '8:15-8:20 PM' }
+    // Evening routine time blocks (10:00 PM - 11:00 PM)
+    if (time < 22.5) return { task: 'Tea ceremony', emoji: '🍵', time: '10:00 PM' }
+    if (time < 23) return { task: 'PM skincare', emoji: '🌙', time: '10:30 PM' }
+    if (time < 24) return { task: 'Sleep prep', emoji: '😴', time: '11:00 PM' }
 
     // All done for the day
-    return { task: 'Rest & recovery', emoji: '💤', time: 'Done for today!' }
+    return { task: 'Time to sleep', emoji: '💤', time: 'Goodnight!' }
   }
 
   const nextTask = getNextTask()
