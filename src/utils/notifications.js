@@ -5,15 +5,29 @@ export const notificationSchedule = [
     id: 'morning-stretches',
     time: '07:00',
     title: 'Morning! 🛏️',
-    body: 'Start with stretches in bed',
-    logCheck: ['lemon-water'] // Check if morning routine started
+    body: 'Start with stretches in bed + lemon water',
+    logCheck: ['lemon-water', 'morning-stretches']
+  },
+  {
+    id: 'morning-exercise',
+    time: '07:10',
+    title: 'Movement Time! 🏊‍♀️',
+    body: 'Pool, gym, or gentle qi gong - you got this!',
+    logCheck: ['exercise', 'pool', 'gym', 'qi-gong']
+  },
+  {
+    id: 'morning-skincare',
+    time: '07:30',
+    title: 'Skincare Time 🧴',
+    body: 'Take care of that beautiful skin',
+    logCheck: ['am-skincare', 'skincare']
   },
   {
     id: 'tiny-breakfast',
     time: '07:45',
     title: 'Breakfast Time 🥚',
     body: 'Eat anything tiny - even 3 almonds count!',
-    logCheck: ['breakfast']
+    logCheck: ['breakfast', 'tiny-breakfast']
   },
   {
     id: 'second-breakfast',
@@ -23,18 +37,46 @@ export const notificationSchedule = [
     logCheck: ['second-breakfast']
   },
   {
+    id: 'lunch-time',
+    time: '12:30',
+    title: 'Lunch Break 🍜',
+    body: 'Time for your biggest meal of the day',
+    logCheck: ['lunch']
+  },
+  {
     id: 'afternoon-snack',
     time: '15:00',
     title: 'Snack Break 🍎',
     body: 'Snack break - check your energy',
-    logCheck: ['snack']
+    logCheck: ['snack', 'afternoon-snack']
+  },
+  {
+    id: 'dinner-time',
+    time: '18:30',
+    title: 'Dinner Time 🍱',
+    body: 'Time for a balanced dinner',
+    logCheck: ['dinner']
   },
   {
     id: 'evening-tea',
     time: '20:00',
     title: 'Tea Time! 🍵',
-    body: 'Which one tonight?',
-    logCheck: ['spearmint-tea', 'evening-tea']
+    body: 'Spearmint, chrysanthemum, or holy basil?',
+    logCheck: ['spearmint-tea', 'evening-tea', 'tea']
+  },
+  {
+    id: 'evening-skincare',
+    time: '20:05',
+    title: 'PM Skincare 🌙',
+    body: 'Double cleanse + beauty routine',
+    logCheck: ['pm-skincare', 'evening-skincare']
+  },
+  {
+    id: 'bedtime-prep',
+    time: '20:15',
+    title: 'Sleep Prep 😴',
+    body: 'Supplements + legs up wall + wind down',
+    logCheck: ['sleep-prep', 'bedtime']
   }
 ]
 

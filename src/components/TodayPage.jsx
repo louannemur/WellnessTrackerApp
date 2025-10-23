@@ -27,15 +27,17 @@ function TodayPage() {
     const time = hour + minute / 60
 
     if (time < 7) return { task: 'Morning routine starts soon', emoji: '🌅', time: '7:00 AM' }
-    if (time < 7.17) return { task: 'Lemon water time', emoji: '🍋', time: '7:10 AM' }
-    if (time < 7.5) return { task: 'Exercise time', emoji: '🏊‍♀️', time: '7:10 AM' }
-    if (time < 7.67) return { task: 'Skincare routine', emoji: '🧴', time: '7:30 AM' }
-    if (time < 10.5) return { task: 'Second breakfast', emoji: '🥚', time: '10:30 AM' }
-    if (time < 12.5) return { task: 'Lunch time', emoji: '🍜', time: '12:30 PM' }
-    if (time < 15) return { task: 'Afternoon snack', emoji: '🍎', time: '3:00 PM' }
-    if (time < 18.5) return { task: 'Dinner time', emoji: '🍱', time: '6:30 PM' }
-    if (time < 20) return { task: 'Evening tea ritual', emoji: '🍵', time: '8:00 PM' }
-    return { task: 'Wind down for sleep', emoji: '😴', time: '8:20 PM' }
+    if (time < 7.17) return { task: 'Stretches + lemon water', emoji: '🍋', time: '7:00 AM' }
+    if (time < 7.5) return { task: 'Movement time', emoji: '🏊‍♀️', time: '7:10 AM' }
+    if (time < 7.75) return { task: 'Skincare routine', emoji: '🧴', time: '7:30 AM' }
+    if (time < 10.5) return { task: 'Tiny breakfast', emoji: '🥚', time: '7:45 AM' }
+    if (time < 12.5) return { task: 'Second breakfast', emoji: '🥣', time: '10:30 AM' }
+    if (time < 15) return { task: 'Lunch time', emoji: '🍜', time: '12:30 PM' }
+    if (time < 18.5) return { task: 'Afternoon snack', emoji: '🍎', time: '3:00 PM' }
+    if (time < 20) return { task: 'Dinner time', emoji: '🍱', time: '6:30 PM' }
+    if (time < 20.083) return { task: 'Evening tea ritual', emoji: '🍵', time: '8:00 PM' }
+    if (time < 20.25) return { task: 'PM skincare routine', emoji: '🌙', time: '8:05 PM' }
+    return { task: 'Sleep prep & wind down', emoji: '😴', time: '8:15 PM' }
   }
 
   const nextTask = getNextTask()
