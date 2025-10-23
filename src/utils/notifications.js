@@ -1,54 +1,33 @@
 // Smart notification system
 
 export const notificationSchedule = [
-  // MORNING ROUTINE - Each individual step
+  // MORNING ROUTINE - Time blocks from wellnessguide.md
   {
-    id: 'am-1',
+    id: 'wake-up-block',
     time: '07:00',
-    title: 'Good Morning! 🛏️',
-    body: 'In-Bed Activation: Gentle stretches before getting up',
-    logCheck: ['am-1', 'in-bed-activation']
+    title: 'Good Morning! 🌅',
+    body: 'Wake-up routine: Stretches, acupressure, lemon water, light (10 min)',
+    logCheck: ['am-1', 'am-2', 'am-3', 'am-4', 'wake-up', 'lemon-water']
   },
   {
-    id: 'am-2',
-    time: '07:03',
-    title: 'Energy Points ⚡',
-    body: 'Acupressure: Zu San Li + Bai Hui points',
-    logCheck: ['am-2', 'acupressure']
-  },
-  {
-    id: 'am-3',
-    time: '07:05',
-    title: 'Hydration Time 🍋',
-    body: 'Morning lemon water - sip slowly',
-    logCheck: ['am-3', 'lemon-water', 'hydration']
-  },
-  {
-    id: 'am-4',
-    time: '07:07',
-    title: 'Light Up! ☀️',
-    body: 'Open curtains, 5 deep breaths at window',
-    logCheck: ['am-4', 'light-activation']
-  },
-  {
-    id: 'am-5',
+    id: 'movement-block',
     time: '07:10',
     title: 'Movement Time! 🏊‍♀️',
-    body: 'Pool, gym, or qi gong - pick what feels good today',
+    body: 'Pool, gym, or qi gong - 20 minutes',
     logCheck: ['am-5', 'exercise', 'movement', 'pool', 'gym', 'qi-gong']
   },
   {
-    id: 'am-6',
+    id: 'skincare-block',
     time: '07:30',
-    title: 'Skincare Ritual 🧴',
-    body: 'Korean routine: Cleanse, tone, essence, moisturize, SPF',
+    title: 'Skincare Routine 🧴',
+    body: 'Korean routine: Cleanse, tone, essence, moisturize, SPF (10 min)',
     logCheck: ['am-6', 'am-skincare', 'skincare']
   },
   {
-    id: 'am-7',
+    id: 'breakfast-block',
     time: '07:40',
     title: 'Mini Breakfast 🥚',
-    body: 'Something tiny counts - even 5 almonds!',
+    body: 'Something tiny counts - even 5 almonds! (5 min)',
     logCheck: ['am-7', 'breakfast', 'mini-breakfast']
   },
 
@@ -82,62 +61,27 @@ export const notificationSchedule = [
     logCheck: ['dinner']
   },
 
-  // EVENING ROUTINE - Each individual step
+  // EVENING ROUTINE - Time blocks from wellnessguide.md
   {
-    id: 'pm-1',
+    id: 'tea-block',
     time: '20:00',
     title: 'Tea Ceremony 🍵',
-    body: 'Mindful tea prep - spearmint, chrysanthemum, or holy basil',
+    body: 'Mindful tea prep - spearmint, chrysanthemum, or holy basil (5 min)',
     logCheck: ['pm-1', 'tea', 'evening-tea', 'tea-ceremony']
   },
   {
-    id: 'pm-2',
+    id: 'pm-skincare-block',
     time: '20:05',
-    title: 'Oil Cleanse 🧼',
-    body: 'Remove sunscreen and buildup - massage for 60 sec',
-    logCheck: ['pm-2', 'oil-cleanse']
+    title: 'PM Skincare 🌙',
+    body: 'Full routine: Double cleanse, treatment, essence, moisturize (10 min)',
+    logCheck: ['pm-2', 'pm-3', 'pm-4', 'pm-5', 'pm-6', 'pm-skincare', 'evening-skincare']
   },
   {
-    id: 'pm-3',
-    time: '20:07',
-    title: 'Second Cleanse 💧',
-    body: 'Water-based cleanser - rinse well',
-    logCheck: ['pm-3', 'water-cleanse']
-  },
-  {
-    id: 'pm-4',
-    time: '20:08',
-    title: 'Treatment Time 🌿',
-    body: 'BHA on Tue/Fri, toner on other days',
-    logCheck: ['pm-4', 'treatment', 'toner']
-  },
-  {
-    id: 'pm-5',
-    time: '20:10',
-    title: 'Essence & Moisturize 💧',
-    body: 'Snail mucin + moisturizer with upward strokes',
-    logCheck: ['pm-5', 'essence', 'moisturizer']
-  },
-  {
-    id: 'pm-6',
-    time: '20:12',
-    title: 'Gua Sha (Optional) 💆‍♀️',
-    body: 'Face massage to reduce puffiness',
-    logCheck: ['pm-6', 'gua-sha', 'face-massage']
-  },
-  {
-    id: 'pm-7',
+    id: 'sleep-prep-block',
     time: '20:15',
-    title: 'Supplements 💊',
-    body: 'Magnesium, probiotic, NAC',
-    logCheck: ['pm-7', 'supplements']
-  },
-  {
-    id: 'pm-8',
-    time: '20:16',
-    title: 'Legs Up the Wall 🧘‍♀️',
-    body: 'Final relaxation - 3 minutes to reduce swelling',
-    logCheck: ['pm-8', 'legs-up', 'sleep-prep']
+    title: 'Sleep Prep 😴',
+    body: 'Supplements + legs up the wall (5 min)',
+    logCheck: ['pm-7', 'pm-8', 'supplements', 'legs-up', 'sleep-prep']
   }
 ]
 

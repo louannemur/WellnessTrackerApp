@@ -20,7 +20,7 @@ function TodayPage() {
     return () => clearInterval(timer)
   }, [])
 
-  // Get next task based on time
+  // Get next task based on time (matching wellnessguide.md time blocks)
   const getNextTask = () => {
     const hour = currentTime.getHours()
     const minute = currentTime.getMinutes()
@@ -29,14 +29,11 @@ function TodayPage() {
     // Before morning routine
     if (time < 7) return { task: 'Morning routine starts soon', emoji: '🌅', time: '7:00 AM' }
 
-    // Morning routine steps (7:00-7:45)
-    if (time < 7.05) return { task: 'In-Bed Activation', emoji: '🛏️', time: '7:00 AM' }
-    if (time < 7.083) return { task: 'Acupressure points', emoji: '⚡', time: '7:03 AM' }
-    if (time < 7.117) return { task: 'Lemon water', emoji: '🍋', time: '7:05 AM' }
-    if (time < 7.167) return { task: 'Light activation', emoji: '☀️', time: '7:07 AM' }
-    if (time < 7.5) return { task: 'Movement practice', emoji: '🏊‍♀️', time: '7:10 AM' }
-    if (time < 7.667) return { task: 'Skincare routine', emoji: '🧴', time: '7:30 AM' }
-    if (time < 10.5) return { task: 'Mini breakfast', emoji: '🥚', time: '7:40 AM' }
+    // Morning routine time blocks (7:00-7:45)
+    if (time < 7.167) return { task: 'Wake-up routine', emoji: '🛏️', time: '7:00-7:10 AM' }
+    if (time < 7.5) return { task: 'Movement practice', emoji: '🏊‍♀️', time: '7:10-7:30 AM' }
+    if (time < 7.667) return { task: 'Skincare routine', emoji: '🧴', time: '7:30-7:40 AM' }
+    if (time < 10.5) return { task: 'Mini breakfast', emoji: '🥚', time: '7:40-7:45 AM' }
 
     // Midday meals
     if (time < 12.5) return { task: 'Second breakfast', emoji: '🥣', time: '10:30 AM' }
@@ -44,17 +41,13 @@ function TodayPage() {
     if (time < 18.5) return { task: 'Afternoon snack', emoji: '🍎', time: '3:00 PM' }
     if (time < 20) return { task: 'Dinner time', emoji: '🍱', time: '6:30 PM' }
 
-    // Evening routine steps (8:00-8:20)
-    if (time < 20.083) return { task: 'Tea ceremony', emoji: '🍵', time: '8:00 PM' }
-    if (time < 20.117) return { task: 'Oil cleanse', emoji: '🧼', time: '8:05 PM' }
-    if (time < 20.133) return { task: 'Water-based cleanse', emoji: '💧', time: '8:07 PM' }
-    if (time < 20.167) return { task: 'Treatment & toner', emoji: '🌿', time: '8:08 PM' }
-    if (time < 20.2) return { task: 'Essence & moisturize', emoji: '💧', time: '8:10 PM' }
-    if (time < 20.25) return { task: 'Gua sha (optional)', emoji: '💆‍♀️', time: '8:12 PM' }
-    if (time < 20.267) return { task: 'Supplements', emoji: '💊', time: '8:15 PM' }
+    // Evening routine time blocks (8:00-8:20)
+    if (time < 20.083) return { task: 'Tea ceremony', emoji: '🍵', time: '8:00-8:05 PM' }
+    if (time < 20.25) return { task: 'PM skincare', emoji: '🌙', time: '8:05-8:15 PM' }
+    if (time < 20.333) return { task: 'Sleep prep', emoji: '😴', time: '8:15-8:20 PM' }
 
-    // Final wind down
-    return { task: 'Legs up the wall', emoji: '🧘‍♀️', time: '8:16 PM' }
+    // All done for the day
+    return { task: 'Rest & recovery', emoji: '💤', time: 'Done for today!' }
   }
 
   const nextTask = getNextTask()

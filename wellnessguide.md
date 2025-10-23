@@ -1395,27 +1395,7 @@ If you exercised (need double cleanse):
 
 ## **PART 10: QUICK REFERENCE CARDS**
 
-### **MORNING ROUTINE - PRINT THIS**
-□ 7:00 - Stretches in bed (3 min)
-□ 7:03 - Acupressure points (2 min)
-□ 7:05 - Lemon water (2 min)
-□ 7:07 - Open curtains, deep breaths (2 min)
-□ 7:10 - Exercise (20 min)
-□ 7:30 - Skincare (10 min)
-□ 7:40 - Mini breakfast (5 min)
-□ 7:45 - Ready for day!
 
-### **EVENING ROUTINE - PRINT THIS**
-□ 8:00 - Make tea mindfully (3 min)
-□ 8:03 - Acupressure while steeping (2 min)
-□ 8:05 - Oil cleanse if wore SPF (2 min)
-□ 8:07 - Regular cleanse (1 min)
-□ 8:08 - Treatments (varies)
-□ 8:10 - Moisturize (2 min)
-□ 8:12 - Optional massage (3 min)
-□ 8:15 - Supplements (1 min)
-□ 8:16 - Legs up wall (3 min)
-□ 8:20 - Wind down for sleep
 
 ### **EMERGENCY BACKUP PLANS**
 
