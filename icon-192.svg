@@ -1,0 +1,24 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#667eea" rx="40"/>
+
+  <!-- Heart/Wellness Symbol -->
+  <g transform="translate(96,96)">
+    <!-- Heart -->
+    <path d="M0,-20 C-10,-30 -25,-30 -35,-20 C-45,-10 -45,10 -30,25 L0,55 L30,25 C45,10 45,-10 35,-20 C25,-30 10,-30 0,-20 Z"
+          fill="white"
+          opacity="0.95"/>
+
+    <!-- Plus sign inside heart -->
+    <rect x="-3" y="-15" width="6" height="30" fill="#667eea" rx="2"/>
+    <rect x="-15" y="-3" width="30" height="6" fill="#667eea" rx="2"/>
+  </g>
+
+  <!-- App name text -->
+  <text x="96" y="165"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="bold"
+        fill="white"
+        text-anchor="middle">Wellness</text>
+</svg>
